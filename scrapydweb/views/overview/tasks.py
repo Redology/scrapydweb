@@ -20,7 +20,7 @@ bp = Blueprint('tasks', __name__, url_prefix='/')
 
 @bp.route('/tasks/history/')
 def history():
-    return send_file(TIMER_TASKS_HISTORY_LOG, mimetype='text/plain', cache_timeout=0)
+    return send_file(TIMER_TASKS_HISTORY_LOG, mimetype='text/plain')
 
 
 # https://apscheduler.readthedocs.io/en/latest/userguide.html
